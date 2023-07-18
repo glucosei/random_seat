@@ -1,8 +1,8 @@
 """
 작성자: 임재욱
-버전:ver.2
-마지막 수정일자: 2023/03/05
-작성목적: 작성자 본인 반의 자리 배치
+버전:ver.3
+마지막 수정일자: 2023/07/18
+작성목적: 트러블 슈팅
 """
 
 
@@ -682,7 +682,7 @@ def rand_seat(main):
 
 
         #print('1')
-        MAX=math.ceil((int(stu_num)-len(stu_ept))/int(desk_num))
+        MAX=math.ceil((int(stu_num)-ept_len)/int(desk_num))
         seat=[0 for i in range(int(stu_num)-ept_len)]
         for i in range(MAX):
             for j in range(int(desk_num)):
